@@ -31,7 +31,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Header title="Programadores como alterar isto para cada SITE" />
+        <Header title="Sérgio Rusu =)" />
         <main>{children}</main>
         <Footer />
       </body>
