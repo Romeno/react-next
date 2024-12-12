@@ -31,7 +31,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Header title="Sérgio Rusu =)" />
+        <Header title="React & Next.js" />
         <main>{children}</main>
         <Footer />
       </body>
