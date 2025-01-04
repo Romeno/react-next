@@ -1,32 +1,20 @@
 [
   {
     "title": "HTML",
-    "image": "/images/html-logo.png",
-    "description": "HTML (HyperText Markup Language) é a linguagem de marcação usada para criar a estrutura básica das páginas web.",
+    "image": "/images/HTML_icon_resized_250px.webp",
+    "description": "A linguagem de marcação para construção de páginas web.",
     "rating": 5
   },
   {
     "title": "CSS",
-    "image": "/images/css-logo.png",
-    "description": "CSS (Cascading Style Sheets) é uma linguagem usada para descrever a apresentação das páginas web, incluindo layout, cores e fontes.",
+    "image": "/images/CSS_icon_resized_250px.webp",
+    "description": "Usada para estilizar páginas web.",
     "rating": 4
   },
   {
     "title": "JavaScript",
-    "image": "/images/javascript-logo.png",
-    "description": "JavaScript é uma linguagem de programação que permite a implementação de funcionalidades dinâmicas nas páginas web.",
-    "rating": 5
-  },
-  {
-    "title": "JSON",
-    "image": "/images/json-logo.png",
-    "description": "JSON (JavaScript Object Notation) é um formato de dados leve utilizado para armazenar e trocar informações entre servidore e cliente.",
-    "rating": 4
-  },
-  {
-    "title": "API RESTful",
-    "image": "/images/api-logo.png",
-    "description": "Uma API RESTful permite que sistemas diferentes comuniquem-se de maneira padronizada, baseada em HTTP, usando recursos identificados por URLs.",
+    "image": "/images/JavaScript_icon_resized_250px.webp",
+    "description": "A linguagem de programação para a web.",
     "rating": 5
   }
 ]
