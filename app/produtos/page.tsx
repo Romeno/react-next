@@ -1,4 +1,3 @@
-"use client";
 
 import { useState, useEffect } from "react";
 import Card from "../../components/Card/Card";
@@ -8,18 +7,16 @@ import styles from "../../components/Card/Card.module.css";
 
 export default function Produtos() {
   const [search, setSearch] = useState("");
-  const [cart, setCart] = useState<Produto[]>([]); // Estado para o carrinho
+  const [cart, setCart] = useState<Produto[]>([]);
 
-  // Função para adicionar um produto ao carrinho
   const addToCart = (produto: Produto) => {
     setCart((prevCart) => {
       const updatedCart = [...prevCart, produto];
-      localStorage.setItem("cart", JSON.stringify(updatedCart)); // Salva o carrinho no localStorage
+      localStorage.setItem("cart", JSON.stringify(updatedCart));
       return updatedCart;
     });
   };
 
-  // Recupera os produtos do carrinho do localStorage quando a página é carregada
   useEffect(() => {
     const savedCart = localStorage.getItem("cart");
     if (savedCart) {
@@ -27,19 +24,19 @@ export default function Produtos() {
     }
   }, []);
 
-  // Filtrando produtos com base no search
   const filteredProducts = produtosData.filter((produto: Produto) =>
     produto.title.toLowerCase().includes(search.toLowerCase())
   );
 
-  // Calcular o preço total do carrinho
-  const totalPrice = cart.reduce((total, produto) => total + (produto.price || 0), 0);
+  const totalPrice = cart.reduce(
+    (total, produto) => total + (produto.price || 0),
+    0
+  );
 
   return (
     <div>
       <h1 className="text-center">Produtos</h1>
 
-      {/* Campo de pesquisa */}
       <input
         type="text"
         placeholder="Pesquisar"
@@ -53,9 +50,7 @@ export default function Produtos() {
         ) : (
           filteredProducts.map((produto: Produto) => (
             <div key={produto.id}>
-              {/* Card do produto */}
               <Card produto={produto} />
-              {/* Botão de adicionar ao carrinho */}
               <button onClick={() => addToCart(produto)}>
                 Adicionar ao Carrinho
               </button>
@@ -64,7 +59,6 @@ export default function Produtos() {
         )}
       </div>
 
-      {/* Exibindo o carrinho */}
       <div className={styles.cesto}>
         <h1 className={styles["product-cesto"]}>
           Preço Total: {totalPrice.toFixed(2)}€
