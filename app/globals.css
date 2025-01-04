@@ -1,0 +1,46 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  /* Box Model */
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+
+  /* Layout e Posicionamento */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* Fundo e Estética */
+  background: url('https://cdn.pixabay.com/photo/2021/11/19/15/21/christmas-6809681_1280.png');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+main {
+  
+  width: 70%;
+  height: 60%;
+  padding: 20px;
+  border-radius: 20px;
+  overflow-y: auto;
+
+  /* Fundo */
+  background: whitesmoke;
+}

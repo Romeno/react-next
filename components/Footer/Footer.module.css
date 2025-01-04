@@ -1,6 +1,7 @@
-.footer{
-    color: #EAEAEA;
-    font-weight: bold;
-    margin-top: 15px;
-    text-align: center;
+.footer {
+  background: none;
+  color: black;
+  font-weight:bold;
+  padding: 10px;
+  text-align: center;
 }
