@@ -1,6 +1,6 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --background: #ffffff;
@@ -15,32 +15,48 @@
 }
 
 body {
-  /* Box Model */
-  margin: 0;
-  padding: 0;
-  height: 100vh;
+  /*color: var(--foreground);
+  background: var(--background);*/
+  font-family: Arial, Helvetica, sans-serif;
 
-  /* Layout e Posicionamento */
+  background-color: #08D9D6;
+
+  /* Center the content */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  /* Fundo e Estética */
-  background: url('https://cdn.pixabay.com/photo/2021/11/19/15/21/christmas-6809681_1280.png');
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+
 }
 
 main {
-  
-  width: 70%;
-  height: 60%;
+  width: 1200px;
+  height: 1350px;
   padding: 20px;
   border-radius: 20px;
   overflow-y: auto;
 
-  /* Fundo */
-  background: whitesmoke;
+  background: #252A34;
+  color: #FF2E63;
+}
+
+h1 {
+  font-size: 1.3rem;
+  margin: 0;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.containerSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  padding: 1rem;
 }

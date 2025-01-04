@@ -28,11 +28,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <Header title="React & Next.js" />
-        <main>{children}</main>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <Header title="Primeiro projeto em React"/>
+          <main>{children}</main>
         <Footer />
       </body>
     </html>
